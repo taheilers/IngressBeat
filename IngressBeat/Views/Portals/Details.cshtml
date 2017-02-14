@@ -1,0 +1,58 @@
+﻿@model IngressBeat.Models.Portal
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Portal</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PortalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PortalName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PLat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PLat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PLong)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PLong)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Captured)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Captured)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Faction)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faction)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

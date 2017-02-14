@@ -29,5 +29,7 @@ namespace IngressBeat.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<IngressBeat.Models.Portal> Portals { get; set; }
     }
 }

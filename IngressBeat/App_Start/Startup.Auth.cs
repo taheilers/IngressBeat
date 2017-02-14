@@ -58,11 +58,11 @@ namespace IngressBeat
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "108749226188-judd7opagmv4ck3p5rn9bl8945bfoql0.apps.googleusercontent.com",
+                ClientSecret = "TJOIPNV_msoqt-9gl8kkrs17"
+            });
         }
     }
 }
