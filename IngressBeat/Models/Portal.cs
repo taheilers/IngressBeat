@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -12,7 +13,8 @@ namespace IngressBeat.Models
         public string PortalName { get; set; }
         public float PLat { get; set; }
         public float PLong { get; set; }
-        public bool Captured { get; set; }
-        public bool Faction { get; set; }
+        public int Faction { get; set; }
+        [ForeignKey("Faction")]
+        public virtual Faction Owner { get; set; }
     }
 }

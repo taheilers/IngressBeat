@@ -197,14 +197,38 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FactionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PortalsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701311436230_InitialCreate.cs" />
+    <Compile Include="Migrations\201701311436230_InitialCreate.Designer.cs">
+      <DependentUpon>201701311436230_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702141455519_ModelChange.cs" />
+    <Compile Include="Migrations\201702141455519_ModelChange.Designer.cs">
+      <DependentUpon>201702141455519_ModelChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702141506278_Factions.cs" />
+    <Compile Include="Migrations\201702141506278_Factions.Designer.cs">
+      <DependentUpon>201702141506278_Factions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702161431225_FactionFK.cs" />
+    <Compile Include="Migrations\201702161431225_FactionFK.Designer.cs">
+      <DependentUpon>201702161431225_FactionFK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702161441222_RMCaptured.cs" />
+    <Compile Include="Migrations\201702161441222_RMCaptured.Designer.cs">
+      <DependentUpon>201702161441222_RMCaptured.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Faction.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MUFG.cs" />
     <Compile Include="Models\Portal.cs" />
@@ -216,6 +240,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Darkly.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -288,6 +313,11 @@
     <Content Include="Views\Portals\Details.cshtml" />
     <Content Include="Views\Portals\Edit.cshtml" />
     <Content Include="Views\Portals\Index.cshtml" />
+    <Content Include="Views\Factions\Create.cshtml" />
+    <Content Include="Views\Factions\Delete.cshtml" />
+    <Content Include="Views\Factions\Details.cshtml" />
+    <Content Include="Views\Factions\Edit.cshtml" />
+    <Content Include="Views\Factions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -297,6 +327,23 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701311436230_InitialCreate.resx">
+      <DependentUpon>201701311436230_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702141455519_ModelChange.resx">
+      <DependentUpon>201702141455519_ModelChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702141506278_Factions.resx">
+      <DependentUpon>201702141506278_Factions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702161431225_FactionFK.resx">
+      <DependentUpon>201702161431225_FactionFK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702161441222_RMCaptured.resx">
+      <DependentUpon>201702161441222_RMCaptured.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

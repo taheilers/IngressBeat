@@ -31,5 +31,7 @@ namespace IngressBeat.Models
         }
 
         public System.Data.Entity.DbSet<IngressBeat.Models.Portal> Portals { get; set; }
+
+        public System.Data.Entity.DbSet<IngressBeat.Models.Faction> Factions { get; set; }
     }
 }
