@@ -38,7 +38,7 @@
             @Html.DisplayFor(modelItem => item.PLong)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Faction)
+            @Html.DisplayFor(modelItem => item.Owner.FactionName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

@@ -14,6 +14,7 @@ namespace IngressBeat.Models
         public float PLat { get; set; }
         public float PLong { get; set; }
         public int Faction { get; set; }
+        //public Faction Owner { get; set; }
         [ForeignKey("Faction")]
         public virtual Faction Owner { get; set; }
     }

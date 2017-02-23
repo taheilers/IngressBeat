@@ -38,6 +38,7 @@ namespace IngressBeat.Controllers
         // GET: Portals/Create
         public ActionResult Create()
         {
+            ViewBag.Faction = new SelectList(db.Factions, "ID", "FactionName");
             return View();
         }
 
