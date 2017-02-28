@@ -9,20 +9,26 @@
 <table class="table">
     <tr>
         <th>
+            @*Table Header - Faction Name*@
             @Html.DisplayNameFor(model => model.FactionName)
         </th>
-        <th></th>
+        <th>
+            @*Table Header - Number of Portals Owned by faction*@
+        </th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ID)
-        </td>
-        <td>
+            @*Display Faction Name*@
             @Html.DisplayFor(modelItem => item.FactionName)
         </td>
-        @*<td>
+        <td>
+            @*Display Number of portals owned by Faction*@
+            @Html.DisplayFor(modelItem => item.FactionName)
+        </td>
+        @*Users will not be creating, editing, or deleting Factions on a routine basis. This section has been omitted.
+        <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })

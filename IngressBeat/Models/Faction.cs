@@ -10,5 +10,7 @@ namespace IngressBeat.Models
     {
         public int ID { get; set; }
         public string FactionName { get; set; }
+        //Number of Portals owned by Faction
+        //public int Count { get; set; }
     }
 }

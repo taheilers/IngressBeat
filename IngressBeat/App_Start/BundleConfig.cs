@@ -26,6 +26,7 @@ namespace IngressBeat
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
+                      //Bootswatch Style Sheet included here.
                       "~/Content/Darkly.css"));
         }
     }
