@@ -18,4 +18,11 @@ namespace IngressBeat.Models
         [ForeignKey("Faction")]
         public virtual Faction Owner { get; set; }
     }
+
+    //public enum Faction
+    //{
+    //    Uncaptured,
+    //    Enlightened,
+    //    Resistance
+    //}
 }

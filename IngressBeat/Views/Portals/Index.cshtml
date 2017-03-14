@@ -29,7 +29,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
+            <a href="https://www.google.com/maps/@Html.Raw('@')@item.PLat,@item.PLong,13z">
+            <!--a href="https://www.ingress.com/intel?ll=@item.PLat,@item.PLong&z=13"-->
             @Html.DisplayFor(modelItem => item.PortalName)
+            </a>
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.PLat)

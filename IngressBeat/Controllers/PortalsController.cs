@@ -32,6 +32,7 @@ namespace IngressBeat.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.Faction = new SelectList(db.Factions, "ID", "FactionName");
             return View(portal);
         }
 
@@ -71,6 +72,7 @@ namespace IngressBeat.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.Faction = new SelectList(db.Factions, "ID", "FactionName");
             return View(portal);
         }
 
